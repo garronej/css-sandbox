@@ -97,24 +97,86 @@
 
 #resetting_all_property_values {
 
+  /*
+  NOTE: By default on chrome:
+  blockquote {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+  }
+  */
+
+  color:cyan;
+  border-bottom: 4px solid black;
+  border-top-style:solid; //The color of the border top is cyan
+  border-top-width:10px;
+
+
   blockquote {
     background-color: red;
     border: 2px solid green;
+  }
+
+  .fix-this-1 {
+
+    all: initial;
+  }
+  .fix-this-2 {
+    /*
+    Here it inerinted the border bottom.
+    All user agent styling for blockquote where removed
+    */
+
+    //all: inherit;
+
+    
+    color: inherit;
+    background-color: inherit;
+    border: inherit;
+    margin-block-start: inherit;
+    margin-block-end: inherit;
+    margin-inline-start: inherit;
+    margin-inline-end: inherit;
+    
 
 
+/*
+    color: rgb(0, 255, 255);
+
+    border-bottom-color: rgb(0,0,0);
+    border-bottom-style: solid;
+    border-bottom-width: 4px; 
+
+    background-color: rgba(0,0,0,0);
+
+    border: inherit;
+    border-image-outset:0;
+    border-left-color:rgb(0, 255, 255);
+    border-left-style:none;
+    border-left-width:0px;
+    border-right-color:rgb(0, 255, 255);
+    border-right-style:none;
+    border-right-width:0px;
+    border-top-color:rgb(0, 255, 255);
+    border-top-style:none;
+    border-top-width:0px;
+
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+*/
 
   }
 
-  .x {
 
-          color: green;
 
-  }
+
 
         
-  .fix-this {
-    all: unset;
-  }
+
     
   
 }
