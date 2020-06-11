@@ -1,3 +1,5 @@
+//https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+
 #cascade {
 
   h1 { 
@@ -51,6 +53,25 @@
       color: red;
   }
   
+
+}
+
+#understanding_inheritance {
+
+  /*
+  "Which properties are inherited by default and which aren't is largely down to common sense."
+  */
+
+  .main {
+      color: rebeccapurple;
+      border: 2px solid #ccc;
+      padding: 1em;
+  }
+
+  .special {
+      color: black;
+      font-weight: bold;
+  }
 
 }
 
