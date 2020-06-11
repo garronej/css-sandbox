@@ -1,3 +1,8 @@
-# css-sandbox
+# Cascade and inheritance
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/css-sandbox)
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+
+## Keywords
+
+cascade specificity inheritance
+inherit initial unset (revert)

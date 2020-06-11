@@ -1,4 +1,3 @@
-//https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
 
 #cascade {
 
@@ -73,6 +72,51 @@
       font-weight: bold;
   }
 
+}
+
+#controlling_inheritance {
+
+  ul {
+      color: green;
+  }
+            
+  .my-class-1 a {
+      color: inherit;
+  }
+            
+  .my-class-2 a {
+      color: initial;
+  }
+            
+  .my-class-3 a {
+      color: unset;
+  }
+    
+
+}
+
+#resetting_all_property_values {
+
+  blockquote {
+    background-color: red;
+    border: 2px solid green;
+
+
+
+  }
+
+  .x {
+
+          color: green;
+
+  }
+
+        
+  .fix-this {
+    all: unset;
+  }
+    
+  
 }
 
 
