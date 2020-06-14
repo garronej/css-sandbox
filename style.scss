@@ -22,7 +22,7 @@
 }
 
 
-
+//https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors
 #attribute_selectors {
 
   a[is_cool] {
@@ -36,6 +36,35 @@
   a[href="#"] {
     background-color: green;
   }
+
+  a[class~="y"]{
+    background-color: green;
+  }
+
+  //Starts with fr-
+  a[lang|="fr"] {
+    background-color: cyan;
+  }
+
+
+
+  li[class^="a"] {
+    font-size: 200%;
+  }
+
+  li[class$="a"] {
+      background-color: yellow;
+  }
+
+  li[class*="a"] {
+      color: red;
+  }
+
+  //I for case insensitive
+  li[class~="D" i]{
+    background-color: cyan;
+  }
+    
 
 }
 
@@ -65,4 +94,25 @@
     color: cyan;
   }
 
+}
+
+#universal_selector {
+
+  //Elements and child elements are selected.
+  * {
+    border-left: 4px solid black;
+  }
+}
+
+#using_the_universal_selector {
+
+  /*
+  NOTE: article:first-child would select any article
+  that is the first child of it's parent.
+  article :first-child would do the same thing that
+  what we wrote but is less readable.
+  */
+  article *:first-child {
+    background-color: red;
+  }
 }
