@@ -1,3 +1,83 @@
-h1 {
-  color: red;
+#psudo_class_example_1 {
+  article p:first-child {
+    font-weight: bold;
+    font-size:120%
+  }
+}
+
+#invalid_and_valid_psudo_class {
+
+
+  label {
+    display: block;
+    margin: 1px;  
+    padding: 1px;
+  }
+
+  .field {
+    margin: 1px;
+    padding: 1px;
+  }
+
+  input {
+
+    &:invalid {
+      background-color: #ffdddd;
+    }
+
+    &:valid {
+      background-color: #ddffdd;
+    }
+
+    &:required {
+      border-color: green;
+      border-width: 3px;
+
+        &:invalid {
+          border-color: #c00000;
+        }
+    }
+
+  }
+  
+
+  /*
+  input:invalid {
+    background-color: #ffdddd;
+  }
+
+  input:valid {
+    background-color: #ddffdd;
+  }
+ 
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+
+  input:required:invalid {
+    border-color: #c00000;
+  }
+  */
+
+  form {
+    &:invalid {
+      border: 5px solid #ffdddd;
+    }
+    &:valid {
+      border: 5px solid #ddffdd;
+    }
+  }
+
+  /*
+  form:invalid {
+    border: 5px solid #ffdddd;
+  }
+  form:valid {
+    border: 5px solid #ddffdd;
+  }
+  */
+
+
+
 }
