@@ -120,7 +120,6 @@
   }
 
   .fix-this-1 {
-
     all: initial;
   }
   .fix-this-2 {
@@ -129,9 +128,9 @@
     All user agent styling for blockquote where removed
     */
 
-    //all: inherit;
+    all: inherit;
 
-    
+    /*
     color: inherit;
     background-color: inherit;
     border: inherit;
@@ -139,10 +138,11 @@
     margin-block-end: inherit;
     margin-inline-start: inherit;
     margin-inline-end: inherit;
+    */
     
 
 
-/*
+    /*
     color: rgb(0, 255, 255);
 
     border-bottom-color: rgb(0,0,0);
@@ -167,8 +167,12 @@
     margin-block-end: 0px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-*/
+    */
 
+  }
+
+  .fix-this-3 {
+    all: unset;
   }
 
 

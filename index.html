@@ -45,7 +45,7 @@
     <ul>
       <!-- 
         color is an inherited property by default
-        but a have default color so it does not inherit
+        but 'a' have default color so it does not inherit
         and get the default collor. 
        -->
       <li>Default <a href="#">link</a> color</li>
@@ -65,7 +65,7 @@
       <li class="my-class-2">Reset the <a href="#">link</a> color</li>
 
       <!-- 
-        Reset when applyed to a property that is inherited by default 
+        'unset' when applyed to a property that is inherited by default 
         ( and color is ) is equivalent to 'inherit'.
         For proberty that are not inherited like 'width' for example
         it is equivalent to 'initial'.
@@ -77,18 +77,20 @@
 
   <div id="resetting_all_property_values">
     <blockquote>
-        <p>This blockquote is styled <a href="#">link</a></p>
+        <p>blockquote<a href="#">link</a></p>
     </blockquote>
 
     <blockquote class="fix-this-1">
-        <p>This blockquote is not styled <a href="#">link</a></p>
+        <p>blockquote<a href="#">link</a></p>
     </blockquote>
     <blockquote class="fix-this-2">
-        <p>This blockquote is not styled <a href="#">link</a></p>
+        <p>blockquote <a href="#">link</a></p>
     </blockquote>
+    <h1>before</h1>
     <blockquote class="fix-this-3">
-        <p>This blockquote is not styled <a href="#">link</a></p>
+        <p>blockquote<a href="#">link</a></p>
     </blockquote>
+    <h1>after</h1>
   </div>
 
 
