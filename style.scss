@@ -53,3 +53,16 @@
 
 
 }
+
+#combinator {
+
+  //Only 'p' that are direct childs of 'acticle'
+  article > p {
+    background-color: red;
+  }
+
+  article p {
+    color: cyan;
+  }
+
+}
