@@ -1,4 +1,28 @@
 
+#selector_lists {
+
+  h1,
+  h2 {
+    color: red;
+  }
+
+}
+
+#nested {
+
+  div div p.x {
+    color: red;
+  }
+
+  //NOTE: It doesn't apply p.x != .x
+  div div p .x {
+    background-color: green;
+  }
+
+}
+
+
+
 #attribute_selectors {
 
   a[is_cool] {
@@ -12,5 +36,20 @@
   a[href="#"] {
     background-color: green;
   }
+
+}
+
+#pseudo_classes_and_pseudo_elements {
+
+  a:hover {
+    background-color: red;
+  }
+
+  p::first-line { 
+    background-color: red;
+  }
+
+
+
 
 }
