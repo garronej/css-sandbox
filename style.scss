@@ -104,10 +104,24 @@
 
   article {
 
+    //It acts as if a <span> was magically wrapped around that first //formatted line, and updated each time the line length changed.
     p::first-line {
       font-weight: bold;
     }
 
+  }
+
+}
+
+#before_and_after_example {
+
+  .x:before {
+    content: "I am the content of before"; //Bad idea
+    color: red;
+  }
+
+  .x:after {
+    content: "😍"
   }
 
 }
