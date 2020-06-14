@@ -81,3 +81,33 @@
 
 
 }
+
+#user_action_pseudo_classes {
+
+  a {
+
+    &:link, //matches unvisited links
+    &:visited {
+      color: rebeccapurple;
+      font-weight: bold;
+    }
+
+    &:hover {
+      color:hotpink;
+    }  
+
+  }
+
+}
+
+#psudo_element_example {
+
+  article {
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+  }
+
+}
