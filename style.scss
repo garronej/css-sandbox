@@ -175,7 +175,39 @@
     all: unset;
   }
 
+
   
+}
+
+#partial_override {
+
+  p {
+    border: 4px solid black;
+  }
+
+  .x {
+    border-top-color: green;
+  }
+
+}
+
+#specificity_example {
+
+  h2 {
+      font-size: 2em;
+      color: #000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .small {
+      font-size: 1em;
+  }
+          
+  .bright {
+      color: rebeccapurple;
+  }         
+    
+
 }
 
 
