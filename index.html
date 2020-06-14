@@ -1,1 +1,19 @@
-<div id="app"></div>
+<div id="app">
+  <div id="descendant_combinator">
+    <div class="box"><p>Text in .box</p></div>
+    <p>Text not in .box</p>
+  </div>
+  <div id="child_combinator">
+    <ul>
+        <li>Unordered item</li>
+        <li>Unordered item
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+    </ul>
+  </div>
+
+
+</div>

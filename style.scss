@@ -1,3 +1,17 @@
-h1 {
-  color: red;
+
+//The descendant_combinator is simply the space.
+#descendant_combinator {
+
+  .box p {
+      color: red;
+  }  
+
 }
+
+#child_combinator {
+  ul > li {
+    border-top: 5px solid red;
+  }  
+}
+
+    
