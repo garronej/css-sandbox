@@ -137,3 +137,27 @@
     background-color: purple;
   }
 }
+
+#exercie_selector_2 {
+
+  .alert {
+    border: solid grey 1px;
+
+    &.stop {
+      background-color: red;
+    }
+    &.go {
+      background-color: green;
+    }
+  }
+
+
+
+  #special {
+    background-color: yellow;
+  }
+
+
+
+
+}
