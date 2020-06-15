@@ -21,3 +21,36 @@
     border-color: blue;
   }
 }
+
+#examples_of_different_display_types_2 {
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  & > * {
+    border: 2px solid rebeccapurple;
+  }
+
+  li, span {
+    border: 2px solid blue;
+  }
+
+  ul {
+    display: inline-flex;
+    padding-inline-start: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .inline {
+    display: inline;
+  }
+
+  
+
+
+
+
+}
