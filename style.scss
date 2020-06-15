@@ -138,7 +138,8 @@
   }
 }
 
-#exercie_selector_2 {
+// https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Selectors_Tasks
+#exercice_selector_2 {
 
   .alert {
     border: solid grey 1px;
@@ -151,13 +152,66 @@
     }
   }
 
-
-
   #special {
     background-color: yellow;
   }
 
+}
+
+#exercice_selector_3 {
+
+  .container {
+
+    font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
 
 
+    p:first-of-type {
+      font-size: 150%;
+
+      &::first-line {
+        color: red;
+      }
+
+    }
+
+    a {
+      &:visited {
+        color: green;
+      }
+      &:link {
+        color: orange;
+      }
+
+      &:hover {
+        text-decoration: initial;
+      }
+      
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 300px;
+
+      td, th {
+        padding: .2em;
+        text-align: left;
+      }
+
+      tr:nth-of-type(2n) {
+        background-color: #333;
+        color: white;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+  }
 
 }
