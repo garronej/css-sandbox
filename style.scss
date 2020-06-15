@@ -14,4 +14,12 @@
   }  
 }
 
+#adjacent_sibling_combinator {
+
+  article h1 + p {
+    font-weight: bold;
+  }
+
+}
+
     
