@@ -1,3 +1,23 @@
-h1 {
-  color: red;
+#examples_of_different_display_types {
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  & > *, li, .block {
+    border: 2px solid rebeccapurple;
+    padding: .5em;
+  }
+
+  ul {
+    display: flex;
+    li {
+      border-color: blue;
+      list-style: none;
+    }
+  }
+
+  .block {
+    display: block;
+    border-color: blue;
+  }
 }
