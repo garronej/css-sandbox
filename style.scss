@@ -36,7 +36,7 @@
 
 
   .a {
-    background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg)
+    background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg);
   }
 
   .b {
@@ -109,5 +109,35 @@
 
 
 
+}
+
+#attachment {
+
+  & { box-sizing: border-box; }
+
+  & *, & *:before, & *:after { box-sizing: inherit; }
+
+  .box {
+    width: 600px;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: top 8px left 8px;
+    background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 600px 300px;
+
+    border: solid black 1px;
+
+
+    
+  }
+
+  .fake_content {
+    height: 2000px;
+    width: 10px;
+    border: solid black 1px;
+  }
+  
 }
 
