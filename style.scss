@@ -15,3 +15,31 @@
 
 
 }
+
+#background_images {
+
+  & { box-sizing: border-box; }
+
+  & *:not(img), & *:before, & *:after { box-sizing: inherit; }
+
+  .box {
+      width: 200px;
+      height: 100px;
+      padding: .5em;
+      border: 1px solid #ccc;
+      margin: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+
+  .a {
+    background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg)
+  }
+
+  .b {
+    background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png);
+  }
+}
