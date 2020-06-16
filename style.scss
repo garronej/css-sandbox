@@ -89,7 +89,7 @@
     border: solid #ADD8E6 5px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    text-align: center;
+
     //https://developer.mozilla.org/en-US/docs/Web/CSS/background-position
     background-position: left, right, top 25% right 0%, bottom 25% right 0%;
 
@@ -98,8 +98,12 @@
     background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png), url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png), url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png), url(https://mdn.github.io/css-examples/learn/backgrounds-borders/star.png);
 
 
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-repeat: no-repeat;
 
+  }
+
+  h2 {
+    text-align: center;
   }
 
 
