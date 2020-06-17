@@ -1,3 +1,49 @@
-h1 {
-  color: red;
+
+
+#test_units {
+
+  p:nth-of-type(1) {
+    border: black solid 1px;
+    //The resolution from the web
+    //is a third of the actual
+    //screen resolution:
+    //1080px->360px
+    width: 300px;
+  }
+  p:nth-of-type(2) {
+    border: black solid 1px;
+    //Just pour printing, do not use
+    //not 30mm on screen.
+    width: 30mm;
+  }
+
+
+
+}
+
+#exploring_an_example {
+
+  font-size: 1em;
+
+
+  .box {
+    border: black solid 1px;
+  }
+
+  .wrapper {
+    font-size: 1em;
+  }
+
+  .px {
+    width: 200px;
+  }
+
+  .vw {
+    width: 10vw;
+  }
+
+  .em {
+    width: 10em;
+  }
+
 }
