@@ -23,7 +23,7 @@
 
 #exploring_an_example {
 
-  font-size: 1em;
+  font-size: 10px;
 
 
   .box {
@@ -46,4 +46,22 @@
     width: 10em;
   }
 
+}
+
+#font_size {
+
+  
+  font-size: 16px;
+  
+
+  .ems li {
+    font-size: 1.3em;
+  }
+
+  .rems li {
+    font-size: 1.3rem;
+  }
+
+
+    
 }
