@@ -119,3 +119,30 @@
   }
 
 }
+
+#calc_function {
+
+  & { box-sizing: border-box; }
+
+  *:not(img), *:before, *:after { box-sizing: inherit; }
+
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+
+  .wrapper {
+    width: 400px;
+    border: black solid 1px;
+  }
+
+  .box {
+
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 5px solid rebeccapurple;
+    background-color: lightblue;
+
+    width: calc(50% + 100px);
+  }
+}
+
+//Convert colors: https://convertingcolors.com/hex-color-86DEFA.html?search=#86DEFA
