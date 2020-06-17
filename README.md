@@ -1,7 +1,10 @@
 # css-sandbox
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/css-sandbox)  
+cours:  
 
-Exercices and memo on [The MDN rererence documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks) on CSS.  
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content
 
-There is roughly one branch for every chapter.
+exo:  
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflow_Tasks
+

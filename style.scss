@@ -1,3 +1,18 @@
-h1 {
-  color: red;
+#exo_1 {
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  .box {
+
+    border: 5px solid black;
+    padding: 1em;
+    height: 200px;
+    width: 300px;
+    overflow-y: auto;
+    
+  }
+    
+
+
 }
