@@ -1,7 +1,4 @@
 # css-sandbox
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/css-sandbox)  
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS
 
-Exercices and memo on [The MDN rererence documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks) on CSS.  
-
-There is roughly one branch for every chapter.

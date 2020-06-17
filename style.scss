@@ -1,3 +1,23 @@
-h1 {
-  color: red;
+
+#margin_percentage {
+
+
+
+  box-sizing: border-box;
+
+  *:not(img), *:before, *:after { box-sizing: inherit; }
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+
+  .box {
+    border: 5px solid darkblue;
+    width: 300px;
+    //this only works in box-sizing mode.
+    margin-left: calc(50% - 150px);
+    padding: 10%;
+  }
+
+
 }
