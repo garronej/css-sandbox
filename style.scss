@@ -68,11 +68,12 @@
 
 #persentages {
 
+  & { box-sizing: border-box; }
+
+  *:not(img), *:before, *:after { box-sizing: inherit; }
+
   font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
 
-  & {
-        box-sizing: border-box;
-  }
 
 
   .box {
