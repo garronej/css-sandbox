@@ -63,7 +63,31 @@ html {
   //The default value of object-fit is 'fill';
 
 
+
+
       
+
+}
+
+//"Moove the image underneth the frame."
+#img_object_position {
+
+  margin-bottom: 40px;
+
+  .box {
+    width: 200px;
+    height: 200px;
+
+    border: 5px solid darkblue;
+
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    object-position: 50% 60%;
+  }
 
 }
 
