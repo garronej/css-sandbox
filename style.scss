@@ -19,6 +19,12 @@ select,
 textarea { 
   font-family : inherit; 
   font-size : 100%; 
+
+  /*
+  For consistency it is a good idea to set margins and padding to 0 on all elements, then add these back in when styling particular controls.
+  */
+  padding: 0;
+  margin: 0; 
 } 
 
 h1 {
