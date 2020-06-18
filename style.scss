@@ -12,3 +12,59 @@ html {
   font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
+html {
+
+  box-sizing: border-box;
+
+  *:not(img), *:before, *:after { box-sizing: inherit; }
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+#object_fit {
+
+
+
+
+  .wrapper {
+    display: flex;
+    align-items: flex-start;
+
+    > * {
+      margin: 20px;
+    }
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+
+    border: 5px solid darkblue;
+
+  }
+
+  
+  //To work object-fit needs the the image to be sized.
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cover {
+    object-fit: cover;
+  }
+
+  .contain {
+    object-fit: contain;
+  }
+
+  //The default value of object-fit is 'fill';
+
+
+      
+
+}
+
+
