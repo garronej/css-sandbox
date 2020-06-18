@@ -21,3 +21,32 @@
 
 
 }
+
+#min_size {
+
+  box-sizing: border-box;
+
+  *:not(img), *:before, *:after { box-sizing: inherit; }
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+  .wrapper {
+    display: flex;
+
+    //Interesting: 
+    align-items: flex-start;
+
+    * {
+      margin: 20px;
+    }
+  }
+
+  .box {
+    border: 5px solid darkblue;
+    min-height: 150px;
+    width: 200px;
+  }
+
+
+}
