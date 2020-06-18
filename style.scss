@@ -1,3 +1,14 @@
 h1 {
   color: red;
 }
+
+html {
+
+  box-sizing: border-box;
+
+  *:not(img), *:before, *:after { box-sizing: inherit; }
+
+  color: #333;
+  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
