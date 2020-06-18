@@ -90,3 +90,15 @@
 
 
 }
+
+#viewport_example_1 {
+
+  .box {
+    border: 5px solid darkblue;
+    width: 20vw;
+    height: 20vh;
+    //If we resize the windows height A become smaller.
+    font-size: 10vh; 
+  }
+
+}
