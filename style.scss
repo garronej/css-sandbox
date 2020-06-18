@@ -67,4 +67,28 @@ html {
 
 }
 
+#replaced_elements_in_layout {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+
+    > div {
+      background-color: rebeccapurple;
+      border-radius: .5em;
+    }
+  }
+
+  //If we don't put that the star is not stretched out. 
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+  }
+
+}
+
 
