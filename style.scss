@@ -1,7 +1,4 @@
 
-
-
-
 html {
 
   box-sizing: border-box;
@@ -9,14 +6,6 @@ html {
   *:not(img), *:before, *:after { box-sizing: inherit; }
 
 }
-
-
-
-
-
-/* General styles - put these straight into your stylesheet */
-
-
 
 
 body {
@@ -59,12 +48,6 @@ html {
     height: calc(100% - 2 * var(--footer-header-height));
 
     background-color: rgba(0,0,0,0.25);
-
-
-
- 
-    
-
 
     p {
       padding: 1em;
@@ -121,53 +104,6 @@ html {
   }
 
 
-
-
-
 }
 
 
-/*
-article {
-
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-  border-radius: 0 0 1.5em 1.5em;
-
-}
-
-.card article img {
-  float: right;
-  max-height: 100%;
-}
-*/
-
-
-
-/* || Footer */
-
-/* Selectors to be matched up with rulesets */
-
-/*
-.card article img
-.card footer
-.card article img
-.card header
-
- 
-*/
-
-/* Rulesets to be matched up with selectors */
-
-/*
-
-
-{
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
-  border-radius: 0 0 1.5em 1.5em;
-}
-
-{
-  max-height: 100%
-  float: right;
-}
-*/

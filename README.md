@@ -1,14 +1,9 @@
 # css-sandbox
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/css-sandbox)  
+Exercice here: 
 
-Exercices and memo on [The MDN rererence documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS) on CSS.  
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Fundamental_CSS_comprehension
 
-There is roughly one branch for every chapter.
+Solution: 
 
-
-TODO: Learn more about forms.
-
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
-
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling
+https://github.com/mdn/learning-area/tree/master/css/introduction-to-css/fundamental-css-comprehension-finished
