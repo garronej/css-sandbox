@@ -1,32 +1,173 @@
 
+
+
+
 html {
 
   box-sizing: border-box;
 
   *:not(img), *:before, *:after { box-sizing: inherit; }
 
-  color: #333;
-  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+/* General styles - put these straight into your stylesheet */
+
+
+
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+.card {
+
+  * {
+    --footer-header-height: 20%;
+  }
+
+  
+  @function footer-header-background-image($direction) {
+    @return linear-gradient($direction,rgba(0,0,0,0), rgba(0,0,0,0.5))
+  }
+  
+
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color:cornflowerblue;
+  border: 0.2em solid black;
+  border-radius: 1.5rem;
+
+  article {
+
+
+    > * {
+      margin: 0;
+    }
+
+    //border: 1px solid black;
+    height: calc(100% - 2 * var(--footer-header-height));
+
+    background-color: rgba(0,0,0,0.25);
+
+
+
+ 
+    
+
+
+    p {
+      padding: 1em;
+      color: rgba(255,255,255,0.8);
+    }
+
+    img {
+      max-height: 100%;
+      float: right;
+    }
+
+  }
+
+  header, footer {
+
+    height: var(--footer-header-height);
+
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    
+    > * {
+      margin: 0;
+    }
+    
+    
+  }
+
+  header {
+
+
+
+
+    h2 {
+      font-size: 2em;
+    }
+
+    background-image: footer-header-background-image(to top);
+    border-radius: inherit;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  footer {
+    background-image: footer-header-background-image(to bottom);
+    border-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    p {
+      font-size: 1.5em;
+    }
+
+  }
+
+
+
+
 
 }
+
 
 /*
-In some browsers, form elements do not inherit font styling by default. Therefore if you want to be sure that your form fields use the font defined on the body, or on a parent element, you should add this rule to your CSS.
-*/
-button, 
-input, 
-select, 
-textarea { 
-  font-family : inherit; 
-  font-size : 100%; 
+article {
 
-  /*
-  For consistency it is a good idea to set margins and padding to 0 on all elements, then add these back in when styling particular controls.
-  */
-  padding: 0;
-  margin: 0; 
-} 
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
 
-h1 {
-  color: red;
 }
+
+.card article img {
+  float: right;
+  max-height: 100%;
+}
+*/
+
+
+
+/* || Footer */
+
+/* Selectors to be matched up with rulesets */
+
+/*
+.card article img
+.card footer
+.card article img
+.card header
+
+ 
+*/
+
+/* Rulesets to be matched up with selectors */
+
+/*
+
+
+{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+{
+  max-height: 100%
+  float: right;
+}
+*/
