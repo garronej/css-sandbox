@@ -60,7 +60,8 @@
 
     background-image: url(https://mdn.github.io/css-examples/learn/backgrounds-borders/balloons.jpg);
     background-repeat: no-repeat;
-    background-size: 100px 100px;
+    //background-size: 100px 100px;
+    background-size: 100px; //width: 100px, height: auto (ratio);
     //background-size: cover;
     //background-size: contain;
     //background-size: 100% 100%;
