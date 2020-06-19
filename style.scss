@@ -6,7 +6,7 @@ html {
   *:not(img), *:before, *:after { box-sizing: inherit; }
 
   color: #333;
-  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 1.2em / 1.5 sans-serif;
 
 }
 
@@ -27,6 +27,69 @@ textarea {
   margin: 0; 
 } 
 
-h1 {
-  color: red;
+
+:root {
+  --background-top: url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/top-image.png);
+  --background-bottom: url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/bottom-image.png);
+  --background-logo: url(https://raw.githubusercontent.com/mdn/learning-area/master/css/styling-boxes/letterheaded-paper-start/logo.png);
 }
+
+
+body {
+  margin: 0;
+  background: #ccc;
+}
+
+article {
+  width: 210mm;
+  height: 297mm;
+  margin: 20px auto;
+  position: relative;
+  border: black solid 1px;
+
+  background-color: white;
+  
+  background-image: 
+    var(--background-top), 
+    var(--background-bottom),
+    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,0.2))
+    ;
+  background-repeat: no-repeat;
+  background-position: top, bottom, 0% 0%;
+
+  background-size: 100%, 100%, auto;
+  
+}
+
+address {
+  position: absolute;
+  bottom: 8mm;
+  right: 20mm;
+}
+
+h1 {
+  position: absolute;
+  top: 12mm;
+  left: 20mm;
+  width: 128px;
+  height: 128px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 44px 0;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+
+  filter: drop-shadow(3px 3px 3px black);
+  /* Better browser support to replace 'filter'
+  border-radius: 64px;
+  box-shadow: 3px 3px 3px black;
+  */
+  background-image: var(--background-logo);
+  background-repeat: no-repeat;
+}
+
+/* Your CSS below here */
+
+
+
