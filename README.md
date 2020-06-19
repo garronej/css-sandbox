@@ -1,13 +1,16 @@
 # css-sandbox
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/css-sandbox)  
+## Brief
 
-Exercices and memo on [The MDN rererence documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS) on CSS.  
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Creating_fancy_letterheaded_paper
 
-There is roughly one branch for every chapter.
+## Solution
 
-TODO: Learn more about forms.
+### Live
 
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
+https://mdn.github.io/learning-area/css/styling-boxes/letterheaded-paper-finished/
 
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling
+### Code
+
+https://github.com/mdn/learning-area/tree/master/css/styling-boxes/letterheaded-paper-finished
+
