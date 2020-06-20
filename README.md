@@ -1,13 +1,14 @@
 # css-sandbox
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/css-sandbox)  
+## Brief
 
-Exercices and memo on [The MDN rererence documentation](https://developer.mozilla.org/en-US/docs/Learn/CSS) on CSS.  
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/A_cool_looking_box
 
-There is roughly one branch for every chapter.
+## Solution
 
-TODO: Learn more about forms.
+### Code
 
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
+https://github.com/mdn/learning-area/tree/master/css/styling-boxes/cool-information-box-finished
 
-https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling
+### Live
+
