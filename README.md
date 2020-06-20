@@ -12,3 +12,5 @@ https://github.com/mdn/learning-area/tree/master/css/styling-boxes/cool-informat
 
 ### Live
 
+https://mdn.github.io/learning-area/css/styling-boxes/cool-information-box-finished/
+
