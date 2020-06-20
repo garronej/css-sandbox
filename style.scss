@@ -5,8 +5,7 @@ html {
 
   *:not(img), *:before, *:after { box-sizing: inherit; }
 
-  color: #333;
-  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
 
 }
 
@@ -27,6 +26,44 @@ textarea {
   margin: 0; 
 } 
 
-h1 {
+
+/* Your CSS below here */
+
+p {
+  margin: auto;
+  width: 200px;
+
+  text-align: center;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: black solid 1px;
+  border-radius: 10px;
+
+
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+
+  font-size: 1.1rem;
+
   color: red;
+
+  /*
+  box-shadow: 6px 9px 11px -4px rgba(0,0,0,0.75);
+  */
+
+    background-color: red;
+
+
+background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+
+ /* other effects */
+  box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6),
+              inset -2px -2px 3px rgba(0,0,0,0.6),
+              2px 2px 5px black;
+
+
+
+  
 }
+
