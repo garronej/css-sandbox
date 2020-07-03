@@ -1,0 +1,40 @@
+
+
+
+.card-alt {
+
+    margin-right:auto;
+    margin-left: auto;
+
+
+    * {
+      --footer-header-height: 20%;
+    }
+
+    
+    > * > * {
+      margin: 0;
+    }
+    
+
+    width: 35em;
+    height: 22em;
+
+    border: 1px solid black;
+
+    article {
+      height: calc(100% - 2 * var(--footer-header-height));
+      background-color: red;
+    }
+
+    header, footer {
+      background-color: green;
+      height: var(--footer-header-height);
+      display: flex;
+      align-items: center;
+    }
+
+
+
+
+}
