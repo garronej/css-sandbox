@@ -27,6 +27,59 @@ textarea {
   margin: 0; 
 } 
 
-h1 {
-  color: red;
+body {
+  margin: 0;
 }
+
+
+//Center vertically
+
+.wrapper-1 {
+
+  background-color: red;
+
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    margin: 0;
+    background-color: blue;
+  }
+
+}
+
+//Use of CSS variable and calc()
+
+.wrapper-2 {
+
+  * {
+    --my-var: 20%;
+  }
+
+  //Remove margin on the p emems
+  > * > * {
+    margin: 0;
+  }
+
+
+  background-color: aquamarine;
+
+  height: 190px;
+
+  .header, .footer {
+    height: var(--my-var);
+    background-color: red;
+  }
+
+  .body {
+    
+    height: calc(100% - 2 * var(--my-var));
+    background-color: blue;
+  }
+}
+
+
+
+
+
