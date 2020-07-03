@@ -6,9 +6,12 @@ html {
   *:not(img), *:before, *:after { box-sizing: inherit; }
 
   color: #333;
-  font: 1.2em / 1.5 Helvetica Neue, Helvetica, Arial, sans-serif;
+  //    font-size / line-heigth font-family
+  font: 1.2em / 1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
+
+
 
 /*
 In some browsers, form elements do not inherit font styling by default. Therefore if you want to be sure that your form fields use the font defined on the body, or on a parent element, you should add this rule to your CSS.
