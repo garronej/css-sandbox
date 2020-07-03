@@ -11,90 +11,26 @@ html {
 
 }
 
-
-
-/*
-In some browsers, form elements do not inherit font styling by default. Therefore if you want to be sure that your form fields use the font defined on the body, or on a parent element, you should add this rule to your CSS.
-*/
-button, 
-input, 
-select, 
-textarea { 
-  font-family : inherit; 
-  font-size : 100%; 
-
-  /*
-  For consistency it is a good idea to set margins and padding to 0 on all elements, then add these back in when styling particular controls.
-  */
-  padding: 0;
-  margin: 0; 
-} 
-
-body {
-  margin: 0;
+:root {
+  --star-url: url(https://mdn.github.io/learning-area/css/styling-text/styling-lists/star.svg);
 }
 
+#app {
 
-//Center vertically
+  ul {
 
-.wrapper-1 {
+    list-style-type: none;
+    padding-inline-start: 20px;
 
-  background-color: red;
-
-  height: 60px;
-  display: flex;
-  align-items: center;
-
-  > * {
-    margin: 0;
-    background-color: blue;
-  }
-
-}
-
-//Use of CSS variable and calc()
-
-.wrapper-2 {
-
-  * {
-    --my-var: 20%;
-  }
-
-  //Remove margin on the p emems
-  > * > * {
-    margin: 0;
-  }
-
-
-  background-color: aquamarine;
-
-  height: 190px;
-
-  .header, .footer {
-    height: var(--my-var);
-    background-color: red;
-  }
-
-  .body {
+    li {
+      background: var(--star-url) no-repeat top 0% left 0% / auto 100%;
+      padding-left: 30px; //Here we would like to capture the height of the li.
+    }
     
-    height: calc(100% - 2 * var(--my-var));
-    background-color: blue;
   }
-}
-
-
-
-.wrapper-4 {
-  height: 100px;
-  width: 100px;
-
-
-
-  background: linear-gradient(to bottom, rgba(0,0,244,0.9), rgba(0,0,0,0) 50%, rgba(244,0,0,0.9) 50%, #00f400e6);
-  //background-color: red;
-
 
 }
+
 
 
 
