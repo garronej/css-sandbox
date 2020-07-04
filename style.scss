@@ -13,6 +13,10 @@ html {
 
 .active_learning {
 
+  * {
+    --escape-url: url(https://mdn.mozillademos.org/files/12982/external-link-52.png);
+  }
+
   @function link-color($isVisited: false) {
     @return rgb(
       60, 
@@ -55,6 +59,16 @@ html {
 
     &:active {
       border: solid red 2px;
+    }
+
+    &[href^="http"] {
+
+      background: var(--escape-url) no-repeat right 0 / auto 100%;
+      padding-right: calc(1.36em + 4px);
+
+      /* Using px, if the root font-size is changed the spacing becomes wrong */
+      //padding-right: 26px;
+
     }
 
   }
