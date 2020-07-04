@@ -13,8 +13,17 @@ html {
 
 .active_learning {
 
-  @function link-color($opacity) {
-    @return rgba(60, 122, 137, $opacity);
+  @function link-color($isVisited: false) {
+    @return rgb(
+      60, 
+      122, 
+      if($isVisited, 160, 254)
+    );
+  }
+
+  @function invert($color, $amount: 100%) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
   }
 
   a {
@@ -22,35 +31,34 @@ html {
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9em;
-        color: rgba(0, 0, 0, 0.5);
 
+    &:link {
+      color: link-color();
+    }
+    
+    &:visited {
+      color: link-color(true);
+    }
 
-  }
-
-  a:link {
-    //color: link-color(1.0);
-  }
-
-  a:visited {
-    //color: link-color(0);
-    //color: rgba(60, 122, 137, 0.2);
-    //opacity: 0.1;
-
-    background-color: red;
+    &:focus {
+      outline: none;
+    }
 
     
-  }
+    &:focus, &:hover {
+      color: invert(link-color(), 70%);
+      background-color: link-color();
+      border-bottom: 1px solid;
+    }
 
-  a:focus {
-
-  }
-
-  a:hover {
-
-  }
-
-  a:active {
+    &:active {
+      border: solid red 2px;
+    }
 
   }
+
+  
+  
+  
 
 }
