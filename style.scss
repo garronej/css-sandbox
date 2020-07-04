@@ -11,51 +11,46 @@ html {
 
 }
 
-:root {
-  --star-url: url(https://mdn.github.io/learning-area/css/styling-text/styling-lists/star.svg);
-}
+.active_learning {
 
-.custom_list_decoration {
+  @function link-color($opacity) {
+    @return rgba(60, 122, 137, $opacity);
+  }
 
-  ul {
+  a {
 
-    list-style-type: none;
-    padding-inline-start: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+        color: rgba(0, 0, 0, 0.5);
 
-    li {
-      background: var(--star-url) no-repeat top 0% left 0% / auto 100%;
-      padding-left: 30px; //Here we would like to capture the height of the li.
-    }
+
+  }
+
+  a:link {
+    //color: link-color(1.0);
+  }
+
+  a:visited {
+    //color: link-color(0);
+    //color: rgba(60, 122, 137, 0.2);
+    //opacity: 0.1;
+
+    background-color: red;
+
     
   }
 
-}
+  a:focus {
 
-.play_around {
-
-  ul {
-    list-style-type: square;
   }
 
-  ol > *, ul > * {
-    //It is useless as the we set the ligne-height already in the html {} rule
-    line-height: 1.5
+  a:hover {
+
   }
 
-  ol {
-    list-style-type: lower-alpha;
+  a:active {
+
   }
-
-
-  
 
 }
-
-
-
-
-
-
-
-
-
