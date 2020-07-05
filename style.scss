@@ -1,4 +1,3 @@
-
 html {
 
   box-sizing: border-box;
@@ -76,5 +75,92 @@ html {
   
   
   
+
+}
+
+
+.links_as_menu {
+
+  border: solid 1px black;
+
+  ul {
+
+    list-style-type: none;
+    list-style-position: inside;
+
+
+    border: solid 1px red;
+
+    padding-inline-start: 0;
+
+    /*
+    * {
+      --section-count: 5;
+      --sep-pr: 1.5;
+    }
+    */
+
+    $section-count: 5;
+    $sep-pr: 1.5;
+
+    @function getAWidth() {
+      @return ( 100 - ( $section-count - 1 ) * $sep-pr ) / $section-count;
+    }
+
+    width: 100%;
+
+
+    li {
+
+      display: inline;
+
+      //border: 1px solid green;
+
+      a {
+
+        display: inline-block;
+
+        //width: calc( ( ( 100 - (var(--section-count) - 1 ) * var(--sep-pr) ) / var(--section-count) ) * 1% );
+        //width: 18.8%;
+        width: getAWidth() * 1%;
+
+        //margin-right: calc(var(--sep-pr)*1%);
+        margin-right: $sep-pr * 1%;
+
+        text-decoration: none;
+
+        text-align: center;
+
+        //COOL to center text vertically and set height
+        line-height: 4;
+
+
+        &:link, &:visited {
+          color: black;
+          background-color: yellow;
+        }
+
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: orange;
+        }
+
+        &:active {
+          color: white;
+          background-color: red;
+        }
+
+      }
+
+      &:last-child > a {
+        margin-right: 0;
+      }
+
+    }
+  }
 
 }
