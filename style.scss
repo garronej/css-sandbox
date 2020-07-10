@@ -137,9 +137,17 @@ body {
       
       display:flex;
       align-items: center;
+      //align-items: flex-start; // ( top )
+
+
       justify-content: space-around;
+      //justify-content: space-between; // no spaces on the side.
+      //justify-content: flex-end;
 
-
+      button:nth-last-of-type(3) { //selects Wink
+        background-color: blue;
+        order: -1;
+      }
 
     }
   }
