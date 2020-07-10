@@ -1,10 +1,10 @@
 
 #test_flex {
 
-
-
   .wrapper {
     display: flex;
+
+    border: black 1px solid;
 
     div {
       background-color: lightgreen;
@@ -12,6 +12,40 @@
       text-align: center;
       padding: 1em;
     }
+
+    .box2 {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+
+  }
+
+}
+
+#test_flex_2 {
+
+  .wrapper {
+
+    display: flex;
+
+    border: black 1px solid;
+
+    > div {
+
+      flex: 1;
+      background-color: lightgreen;
+      border-radius: 15px;
+      padding: 1em;
+
+    }
+
+    .box2 {
+      padding-top: 2em;
+      padding-bottom: 2em;
+    }
+
+
   }
 
 }
