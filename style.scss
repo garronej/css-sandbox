@@ -8,28 +8,76 @@ body {
 
 #app {
 
-  header {
-    background: purple;
-    height: 100px;
+  #example_1 {
+
+    header {
+      background: purple;
+      height: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      line-height: 100px;
+      margin: 0;
+    }
+
+    article {
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row; //default
+      //flex-direction: column; //much like without flex
+      //flex-direction: row-reverse;
+      //flex-direction: column-reverse;
+    }
+
   }
 
-  h1 {
-    text-align: center;
-    color: white;
-    line-height: 100px;
-    margin: 0;
-  }
+  #example_2 {
 
-  article {
-    padding: 10px;
-    margin: 10px;
-    background: aqua;
-  }
+    header {
+      background: purple;
+      height: 100px;
+    }
 
-  section {
-    display: flex;
-  }
+    h1 {
+      text-align: center;
+      color: white;
+      line-height: 100px;
+      margin: 0;
+    }
 
+    article {
+      padding: 10px;
+      margin: 10px;
+      background: aqua;
+    }
+
+    /* Add your flexbox CSS below here */
+
+    section {
+      display: flex;
+      flex-direction: row; //default
+      //flex-wrap: nowrap; //default, element break out the container
+      flex-wrap: wrap;
+    }
+
+    article {
+      /*
+      The rule is: if there is not enough space to fit
+      n element of at least Xpx then put n-1 and fill up
+      all available space. 
+      */
+      flex: 200px;
+    }
+
+
+  }
 
 }
 
