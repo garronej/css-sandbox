@@ -49,3 +49,37 @@
   }
 
 }
+
+#test_flex_3 {
+
+  .wrapper {
+
+    border: black 1px solid;
+
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+
+
+
+    div {
+      background-color: lightgreen;
+      //border-radius: 15px;
+      //text-align: center;
+      //padding: 1em;
+      padding: 0;
+
+      position: absolute;
+      right: 30px;
+      width: 100px;
+    }
+
+
+
+
+
+
+  }
+
+}
