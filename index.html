@@ -1,26 +1,85 @@
 <div id="app">
 
 <form>
-  <fieldset>
-    <legend>Fruit juice size</legend>
-    <p>
-      
-      <label>
-        <input type="radio" name="size" id="size_1" value="small">
-        Small
-      </label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_2" value="medium">
-      <label for="size_2">Medium</label>
-    </p>
-    <p>
-      <input type="radio" name="size" id="size_3" value="large">
-      <label for="size_3">Large</label>
-    </p>
-  </fieldset>
-</form>
+  <h1>Payment form</h1>
+  <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
 
+  <section>
+    <h2>Contact information</h2>
+    <fieldset>
+      <legend>Title</legend>
+      <ul>
+        <li>
+          <input type="radio" name="title" id="title_1" value="A"/>
+          <label for="title_1">Ace</label>
+        </li>
+        <li>
+          <input type="radio" name="title" id="title_2" value="K"/>
+          <label for="title_2">King</label>
+        </li>
+        <li>
+          <input type="radio" name="title" id="title_3" value="Q"/>
+          <label for="title_3">Queen</label>
+        </li>
+      </ul>
+    </fieldset>
+    <p>
+      <label for="name">
+        <span>Name: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" name="username" id="name" required/>
+    </p>
+    <p>
+      <label for="mail">
+        <span>Mail: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="email" name="usermail" id="mail" required/>
+    </p>
+    <p>
+      <label for="password">
+        <span>Password: </span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="password" name="userpassword" id="password" required/>
+    </p>
+  </section>
+  <section>
+    <h2>Payment information</h2>
+    <p>
+      <label for="card_type">
+        <span>Card type:</span>
+      </label>
+      <select id="card_type" name="usercardtype" id="card_type">
+        <option value="visa" selected>Visa</option>
+        <option value="mc">Mastercard</option>
+        <option value="amex">American Express</option>
+      </select>
+    </p>
+    <p>
+      <label for="card_number">
+        <span>Card number:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="text" id="card_number" name="usercardnumber"/>
+    </p>
+    <p>
+      <label for="card_expiration">
+        <span>Expiration date:</span>
+        <strong><abbr title="required">*</abbr></strong>
+        <em>Formated as mm/dd/yyy<em>
+      </label>
+      <input type="date" id="card_expiration" name="usercardexpiration"/>
+    </p>
+  </section>
+  <section>
+    <p>
+      <button type="submit">Validate the payment</button>
+    </p>
+  </section>
+
+</form>
 
 
 
