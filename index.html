@@ -47,16 +47,18 @@
   </section>
   <section>
     <h2>Payment information</h2>
-    <p>
-      <label for="card_type">
+    <div class="card_type">
+      <label class="the_class" for="card_type">
         <span>Card type:</span>
       </label>
-      <select id="card_type" name="usercardtype" id="card_type">
-        <option value="visa" selected>Visa</option>
-        <option value="mc">Mastercard</option>
-        <option value="amex">American Express</option>
-      </select>
-    </p>
+      <div class="the_div" style="display: inline-block;">
+        <select id="card_type" name="usercardtype">
+          <option value="visa" selected>Visa</option>
+          <option value="mc">Mastercard</option>
+          <option value="amex">American Express</option>
+        </select>
+      </div>
+    </div>
     <p>
       <label for="card_number">
         <span>Card number:</span>
