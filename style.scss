@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  
 }
 
 #app {
@@ -152,6 +153,97 @@ body {
     }
   }
 }
+
+#example_5 {
+
+  border: 1px solid red;
+  height: 300px;
+
+  div:first-of-type {
+
+    background-color: red;
+    padding: 10px;
+
+  }
+
+  div:nth-of-type(2) {
+
+    background-color: yellow;
+    border: 1px solid black;
+    //height: 100px;
+    width: 100%;
+    //margin-top:auto;
+    //margin-bottom:0;
+
+  }
+
+}
+
+#example_6 {
+
+  border: 1px solid red;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
+  div:first-of-type {
+
+    background-color: red;
+    padding: 10px;
+
+  }
+
+  div:nth-of-type(2) {
+
+    background-color: yellow;
+    border: 1px solid black;
+
+    width: 100%;
+
+
+    flex: 1;
+
+  }
+
+}
+
+#example_7 {
+
+  box-sizing: border-box;
+
+  background-color: pink;
+  border: 1px solid red;
+  width: 90vw;
+  
+
+  
+  display: flex;
+  flex: wrap;
+
+  > div {
+    flex: 600px;
+  }
+
+  div:first-of-type {
+    background-color: blue;
+    //width: 150%;
+    //flex: 200px;
+  }
+
+
+  margin-bottom: 10px;
+
+  div:nth-of-type(2) {
+    background-color: red;
+
+
+  }
+  
+
+
+}
+
+
 
 
 
