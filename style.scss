@@ -53,31 +53,28 @@ body {
       margin: 0;
     }
 
-    article {
-      padding: 10px;
-      margin: 10px;
-      background: aqua;
-    }
-
-    /* Add your flexbox CSS below here */
-
     section {
+      
       display: flex;
       //flex-wrap: nowrap; //default, element break out the container
       flex-wrap: wrap;
       //flex-direction: row; //default
       //flex-direction: row-reverse; //right to left / top to bottom.
-    }
 
-    article {
-      /*
-      The rule is: if there is not enough space to fit
-      n element of at least Xpx then put n-1 and fill up
-      all available space. 
-      */
-      flex: 200px;
-    }
+       article {
+          padding: 10px;
+          margin: 10px;
+          background: aqua;
+          /*
+          The rule is: if there is not enough space to fit
+          n element of at least Xpx then n-1 elements are put
+          and they fill up all available space. 
+          */
+          //flex: 200px;
+       }
 
+    }
+ 
 
   }
 
@@ -108,7 +105,7 @@ body {
         background: aqua;
 
         //flex: 1;
-        flex: 1 150px; // We can define the min width.
+        flex: 1 50px; // We can define the min width.
       }
 
       article:nth-of-type(2){
@@ -137,15 +134,16 @@ body {
 
       
       display:flex;
-      align-items: center;
-      //align-items: flex-start; // ( top )
+      //align-items: center;
+      //align-items: flex-start;
+      //align-items: flex-end;
 
 
       justify-content: space-around;
       //justify-content: space-between; // no spaces on the side.
       //justify-content: flex-end;
 
-      button:nth-last-of-type(3) { //selects Wink
+      button:nth-of-type(3) { //selects Wink
         background-color: blue;
         order: -1;
       }
@@ -210,35 +208,27 @@ body {
 #example_7 {
 
   box-sizing: border-box;
-
   background-color: pink;
   border: 1px solid red;
   width: 90vw;
   
 
   
+
   display: flex;
-  flex: wrap;
-
-  > div {
-    flex: 600px;
+  flex-wrap: wrap;
+  div{
+    border: solid red 2px;
   }
 
-  div:first-of-type {
-    background-color: blue;
-    //width: 150%;
-    //flex: 200px;
-  }
+
+
+
 
 
   margin-bottom: 10px;
 
-  div:nth-of-type(2) {
-    background-color: red;
 
-
-  }
-  
 
 
 }
