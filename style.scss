@@ -266,7 +266,30 @@ body {
 }
 
 
+#example_8 {
 
+  border: 1px solid black;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > div {
+    width: 80%;
+    background-color: red;
+    @media screen and (max-width: 800px){
+      
+        width: 100%;
+      
+    }
+    
+
+  }
+
+
+
+}
 
 
 
