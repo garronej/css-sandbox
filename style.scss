@@ -144,11 +144,26 @@ body {
 
  
 
-      button {
+      > button {
+
+
         font-size: 18px;
         line-height: 1.5;
         width: 15%;
+        flex: 1;
+
+        $margin: 1em;
+
+
+        margin-left: $margin;
+
+        &:last-of-type {
+          margin-right: $margin;
+        }
+
       }
+
+    
 
       
       display:flex;
@@ -238,6 +253,14 @@ body {
 
 
 
+}
+
+#example_8 {
+  span {
+    display: inline-block;
+    width: 100px;
+
+  }
 }
 
 
