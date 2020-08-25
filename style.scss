@@ -11,23 +11,21 @@ body {
 
   #example_1 {
 
-    header {
+    > header {
       background: purple;
       height: 100px;
+
+      > h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
     }
 
-    h1 {
-      text-align: center;
-      color: white;
-      line-height: 100px;
-      margin: 0;
-    }
 
-    article {
-      padding: 10px;
-      margin: 10px;
-      background: aqua;
-    }
+
+
 
     section {
       display: flex;
@@ -35,6 +33,12 @@ body {
       //flex-direction: column; //much like without flex
       //flex-direction: row-reverse;
       //flex-direction: column-reverse;
+
+      > article {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+      }
     }
 
   }
@@ -44,24 +48,24 @@ body {
     header {
       background: purple;
       height: 100px;
+        > h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+        }
     }
 
-    h1 {
-      text-align: center;
-      color: white;
-      line-height: 100px;
-      margin: 0;
-    }
 
-    section {
+
+    > section {
       
       display: flex;
       //flex-wrap: nowrap; //default, element break out the container
       flex-wrap: wrap;
-      //flex-direction: row; //default
-      //flex-direction: row-reverse; //right to left / top to bottom.
 
-       article {
+  
+       > article {
           padding: 10px;
           margin: 10px;
           background: aqua;
@@ -84,32 +88,46 @@ body {
     header {
       background: purple;
       height: 100px;
+
+      > h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
     }
 
-    h1 {
-      text-align: center;
-      color: white;
-      line-height: 100px;
-      margin: 0;
-    }
 
 
 
-    section {
+
+    > section {
       display: flex;
       flex-direction: row; //default
 
-      article {
+      > article {
         padding: 10px;
         margin: 10px;
         background: aqua;
 
         //flex: 1;
-        flex: 1 50px; // We can define the min width.
+        flex: 1 150px; // We can define the min width.
+        /*
+        The flex basis only real matter when all the element
+        that has one specified can take this size without
+        requireing the elements to break outside their container
+        it will mean that the ones that do not have a flex basis 
+        will be smaller than they normaly would be.
+        Play with te with of the viewport for understanding
+        how it works.
+        */
+    
       }
 
-      article:nth-of-type(2){
+      > article:nth-of-type(2){
+        //Doing this I also set back the min width to auto.
         flex: 2;
+        min-width: auto;;
       }
 
     }
@@ -152,67 +170,7 @@ body {
   }
 }
 
-#example_5 {
-
-  border: 1px solid red;
-  height: 300px;
-  * {box-sizing: border-box;}
-
-
-  div:first-of-type {
-
-    background-color: red;
-    padding: 10px;
-
-
-  }
-
-  div:nth-of-type(2) {
-
-    background-color: yellow;
-    border: 1px solid black;
-    //height: 100px;
-    width: 100%;
-    //margin-top:auto;
-    //margin-bottom:0;
-
-
-  }
-
-}
-
-#example_6 {
-
-  box-sizing: border-box;
-  border: 1px solid red;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-
-  * {box-sizing: border-box;}
-
-
-  div:first-of-type {
-
-    background-color: red;
-    padding: 10px;
-
-  }
-
-  div:nth-of-type(2) {
-
-    background-color: yellow;
-    border: 1px solid black;
-
-    width: 100%;
-
-
-    flex: 1;
-
-  }
-
-}
-
+// https://www.youtube.com/watch?v=KOvGeFUHAC0&feature=emb_logo
 #example_7 {
 
   * {box-sizing: border-box; }
@@ -235,58 +193,35 @@ body {
   > section {
 
     flex:1;
-    //flex: 1 1 auto; /* Positive flex-shrink */
-    //flex: 0 1 auto;
-    
-
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    
-
-
-
+  
 
     > nav {
-      //width: 100px;
       
       padding-right: 15px;
-
       height:100%;
-
       border: 1px purple solid;
-
       overflow: auto;
-      
       
     }
 
     > section {
 
-      height: 100%;
-      
+      height: 100%; 
       flex: 1;
-      
-
       display: flex;
       flex-direction: column;
-
-
 
       > main {
         flex: 1;
         border: 1px;
-        overflow: auto;
-
-
- 
+        overflow: auto; 
       }
 
       > footer {
         border: red solid 1px;
       }
-
-
 
     }
 
@@ -305,50 +240,7 @@ body {
 
 }
 
-#example_8 {
 
-
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 200px;
-
-  background-color: pink;
-
-  > div:first-of-type {
-    background-color: red;
-
-  }
-
-  > div:last-of-type { 
-
-    //display: flex;
-    flex: 1;
-    //min-height: 0px;
-    border: green 1px solid;
-    background-color: yellow;
-    overflow: auto;
-
-    /*
-    > div {
-      flex: 1;
-      overflow: auto;
-    }
-    */
-
-  }
-
-  margin-bottom: 300px;
-}
-
-/*
-#example_9{
-  border: solid red 2px;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-
-}*/
 
 
 
