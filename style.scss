@@ -24,20 +24,29 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, auto));
 
+
+
+
+
+
 }
 
 #example4 {
 
+
   border: 1px red solid;
 
-  height: 4em;
   width: 60%;
 
   display: grid;
 
   //grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-  grid-template-columns: repeat(auto-fill, auto);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+
+  grid-gap: 20px;
+
+  min-height: 10px;
+
 
 }
 
