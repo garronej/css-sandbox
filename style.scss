@@ -234,9 +234,10 @@ body {
   
   section {
 
-    //flex:1;
+    flex:1;
     //flex: 1 1 auto; /* Positive flex-shrink */
-    flex: 0 1 auto;
+    //flex: 0 1 auto;
+
 
 
     display: flex;
@@ -271,11 +272,9 @@ body {
 
       main {
         flex: 1;
-
-
-
-        
+ 
       }
+
 
 
     }
@@ -288,12 +287,59 @@ body {
 
 
 
-  margin-bottom: 10px;
+  margin-bottom: 400px;
 
 
 
 
 }
+
+#example_8 {
+
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 200px;
+
+  background-color: pink;
+
+  > div:first-of-type {
+    background-color: red;
+
+  }
+
+  > div:last-of-type { 
+
+    //display: flex;
+    flex: 1;
+    //min-height: 0px;
+    border: green 1px solid;
+    background-color: yellow;
+    overflow: auto;
+
+    /*
+    > div {
+      flex: 1;
+      overflow: auto;
+    }
+    */
+
+  }
+
+  margin-bottom: 300px;
+}
+
+/*
+#example_9{
+  border: solid red 2px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+
+}*/
+
+
 
 
 
