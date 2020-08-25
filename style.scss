@@ -227,38 +227,43 @@ body {
 
 
 
-  header {
+  > header {
       width: 100%;
   }
 
   
-  section {
+  > section {
 
     flex:1;
     //flex: 1 1 auto; /* Positive flex-shrink */
     //flex: 0 1 auto;
+    
 
-
-
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     
-    > * {
-      border: solid red 2px;
-      //display: inline-block;
-    }
 
 
 
-    nav {
+
+    > nav {
       //width: 100px;
       
       padding-right: 15px;
+
+      height:100%;
+
+      border: 1px purple solid;
+
+      overflow: auto;
       
       
     }
 
-    section {
+    > section {
+
+      height: 100%;
       
       flex: 1;
       
@@ -266,13 +271,19 @@ body {
       display: flex;
       flex-direction: column;
 
-      > * {
-        border: solid green 2px;
+
+
+      > main {
+        flex: 1;
+        border: 1px;
+        overflow: auto;
+
+
+ 
       }
 
-      main {
-        flex: 1;
- 
+      > footer {
+        border: red solid 1px;
       }
 
 
