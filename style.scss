@@ -139,7 +139,7 @@ body {
 
 
     div {
-      height: 100px;
+      height: 150px;
       border: 1px solid black;
 
  
@@ -148,7 +148,7 @@ body {
 
 
         font-size: 18px;
-        line-height: 1.5;
+        //line-height: 1.5;
         width: 15%;
         flex: 1;
 
@@ -175,6 +175,14 @@ body {
       justify-content: space-around;
       //justify-content: space-between; // no spaces on the side.
       //justify-content: flex-end;
+
+      /*
+      By default the flex items takes all the heign available
+      if the parent is constrained, test align-items: center
+      , for example, to change this behaviour 
+      */
+      align-items: auto;
+
 
       button:nth-of-type(3) { //selects Wink
         background-color: blue;
