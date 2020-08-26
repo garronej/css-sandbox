@@ -53,7 +53,6 @@
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 
     grid-template-areas: 
@@ -75,6 +74,36 @@
     div:nth-of-type(4){
       grid-area: e2;
 
+    }
+  }
+
+}
+
+#Grid_Layout_One_bis_bis_bis {
+
+
+  .grid {
+
+    display: grid;
+
+    grid-gap: 20px;
+
+    div:nth-of-type(1){
+      grid-column: 3;
+      grid-row: 1;
+    }
+
+    div:nth-of-type(2){
+      grid-column: 1;
+      grid-row: 2;
+    }
+    div:nth-of-type(3){
+      grid-column: 1;
+      grid-row: 1;
+    }
+    div:nth-of-type(4){
+      grid-column: 2;
+      grid-row: 1;
     }
   }
 
