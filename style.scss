@@ -1,5 +1,5 @@
 
-  div[id^=Grid_Layout_One] {
+div[id^=Grid_Layout_One], #Grid_Layout_Two {
 
     border: 1px solid black;
 
@@ -108,6 +108,72 @@
   }
 
 }
+
+#Grid_Layout_Two > .grid {
+
+
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 300px;
+
+  > .item1 {
+    grid-column: 1 / span 2;
+    grid-row: 1 /span 2;
+  }
+
+  > .item2 {
+    grid-column: 2 / span 2;
+    grid-row: 2 /span 2;
+
+    opacity: 0.3;
+    background-color: pink;
+
+  }
+
+
+}
+
+#Grid_and_Flex_Layout_4 > .container {
+
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+  > .card {
+
+    img {
+      width: 100%;
+    }
+
+
+    > ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-inline-start: 0;
+
+      > li {
+
+
+        background-color: grey;
+        color: white;
+        border-radius: 2px;
+        padding: 5px;
+        margin: 5px;
+
+
+      }
+    }
+
+  }
+
+
+
+}
+
 
 
 
