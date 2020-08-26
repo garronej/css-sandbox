@@ -69,7 +69,6 @@ body {
 
 }
 
-
 #example5 {
 
   display: grid;
@@ -101,6 +100,38 @@ body {
     grid-column: 1 / 3;
     //grid-column: 1 / span 2;
     grid-row: 3;
+  }
+
+
+}
+
+
+
+#example6 {
+
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+
+  grid-template-areas: 
+    "e1 e1"
+    "e2 e3"
+    "e4 e4";
+
+  header {
+    grid-area: e1;
+  }
+
+  article {
+    grid-area: e3;
+  }
+
+  aside {
+    grid-area: e2;
+  }
+
+  footer {
+    grid-area: e4;
   }
 
 
