@@ -1,24 +1,87 @@
 
+  div[id^=Grid_Layout_One] {
 
-#Grid_Layout_One {
+    border: 1px solid black;
 
-  .grid {
-    > div {
+    > .grid > div {
         border-radius: 5px;
         padding: 10px;
         background-color: rgb(207,232,220);
         border: 2px solid rgb(79,185,227);
-    }
+  }
+
+  margin-bottom: 30px;
+}
+
+#Grid_Layout_One {
+
+
+  .grid {
 
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+
+  }
+
+ 
+}
+
+
+#Grid_Layout_One_bis {
+
+
+  .grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, calc(100%/3));
+    //grid-gap: 20px;
+    
     
   }
 
 
 
 }
+
+#Grid_Layout_One_bis_bis {
+
+
+  .grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    grid-template-areas: 
+      "e1 e2 e3"
+      "e4 .  . ";
+
+    div:nth-of-type(1){
+      grid-area: e3;
+
+    }
+
+    div:nth-of-type(2){
+      grid-area: e4;
+
+    }
+    div:nth-of-type(3){
+      grid-area: e1;
+
+    }
+    div:nth-of-type(4){
+      grid-area: e2;
+
+    }
+  }
+
+}
+
+
+
 
 
