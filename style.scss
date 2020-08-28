@@ -271,18 +271,33 @@ body {
   border: 1px solid black;
   height: 500px;
 
+  
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
+  
+  
+
+
 
   > div {
-    width: 80%;
     background-color: red;
-    @media (max-width: 360px) {
-      
-        width: 100%;
-      
+    padding: 30px;
+    margin: 10px;
+
+    > div {
+      background-color: gold;
+      width: 100px;
     }
+
+    /*
+    width: 80%;
+    @media (max-width: 360px) {
+        width: 100%;
+    }
+    */
     
 
   }
